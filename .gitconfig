@@ -1,0 +1,8 @@
+[user]
+	name = Jonas Schmid
+	email = jonas.schmid@gmail.com
+[mergetool]
+	keepBackup = true
+[alias]
+	edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; subl `f`"
+	l = "log --pretty=oneline --abbrev-commit"
