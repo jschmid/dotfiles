@@ -45,13 +45,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew pod docker boot2docker fasd)
+plugins=(git fasd)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jonas/gems/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -86,3 +86,13 @@ alias gg='noglob gg' # https://github.com/qw3rtman/gg
 
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
+
+# Commented for RVM, see below
+#export GEM_HOME="/Users/jonas/gems/"
+
+# https://github.com/nvbn/thefuck/
+eval "$(thefuck --alias)"
+
+# RVM
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
