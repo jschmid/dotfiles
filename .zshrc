@@ -82,7 +82,6 @@ export LANG=en_US.UTF-8
 # Jonas
 
 export EDITOR='subl -w'
-alias gg='noglob gg' # https://github.com/qw3rtman/gg
 
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
