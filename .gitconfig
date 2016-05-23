@@ -1,8 +1,9 @@
 [user]
 	name = Jonas Schmid
 	email = jonas.schmid@gmail.com
-[mergetool]
-	keepBackup = true
+	signingkey = C7465518
+[credential]
+	helper = osxkeychain
 [alias]
 	edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; subl `f`"
 	l = "log --pretty=oneline --abbrev-commit"
@@ -11,3 +12,18 @@
 	ri = "rebase -i"
 	ra = "rebase --abort"
 	rc = "rebase --continue"
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[core]
+	excludesfile = /Users/jonas/.gitignore_global
+
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
