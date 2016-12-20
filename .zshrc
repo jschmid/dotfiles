@@ -90,3 +90,5 @@ export EDITOR='subl -w'
 
 # https://github.com/nvbn/thefuck/
 eval "$(thefuck --alias)"
+
+alias git-prune="git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
