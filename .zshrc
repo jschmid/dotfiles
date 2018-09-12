@@ -7,7 +7,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +53,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fasd)
+plugins=(git fasd zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,9 +88,33 @@ export LANG=en_US.UTF-8
 
 # Jonas
 
-export EDITOR='subl -w'
+# Used for "agnoster" Oh My zsh theme
+DEFAULT_USER="jonas"
+
+#export EDITOR='subl -w'
+export EDITOR='code'
 
 # https://github.com/nvbn/thefuck/
 eval "$(thefuck --alias)"
 
-alias git-prune="git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
+#git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+
+# iTerm shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Android SDK path
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+export ANDROID_HOME=/Users/jonas/Library/Android/sdk
+
+# Go
+export GOPATH=$HOME/go
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+eval $(/usr/libexec/path_helper -s)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jonas/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jonas/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jonas/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jonas/google-cloud-sdk/completion.zsh.inc'; fi
