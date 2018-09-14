@@ -5,7 +5,7 @@
 [credential]
 	helper = osxkeychain
 [alias]
-	edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; subl `f`"
+	edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`"
 	l = "log --pretty=oneline --abbrev-commit"
 	s = "status -sb"
 	r = "rebase"
