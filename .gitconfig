@@ -1,7 +1,7 @@
 [user]
 	name = Jonas Schmid
 	email = jonas.schmid@gmail.com
-	signingkey = B807D4627B9317F0
+	signingkey = 8590A344C55C2E078D5C7D8735C97890C7465518
 [credential]
 	helper = osxkeychain
 [alias]
