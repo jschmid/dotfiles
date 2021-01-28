@@ -20,7 +20,6 @@
 	excludesfile = /Users/jonas/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = code --wait
-	autocrlf = true
 [gpg]
 	program = /usr/local/bin/gpg
 
