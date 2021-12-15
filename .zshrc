@@ -106,15 +106,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 export ANDROID_HOME=/Users/jonas/Library/Android/sdk
 
-# Go
-export GOPATH=$HOME/go
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-eval $(/usr/libexec/path_helper -s)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jonas/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jonas/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jonas/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jonas/google-cloud-sdk/completion.zsh.inc'; fi
+# Ruby from Brew
+export PATH="/usr/local/opt/ruby/bin:$PATH"
