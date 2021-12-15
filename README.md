@@ -9,3 +9,4 @@ My personal dot files
 * [Xcodes](https://github.com/RobotsAndPencils/xcodes)
 * [Oh My Zsh](https://ohmyz.sh/)
 * [thefuck](https://github.com/nvbn/thefuck/)
+* [fasd](https://github.com/clvv/fasd)
