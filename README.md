@@ -10,3 +10,4 @@ My personal dot files
 * [Oh My Zsh](https://ohmyz.sh/)
 * [thefuck](https://github.com/nvbn/thefuck/)
 * [fasd](https://github.com/clvv/fasd)
+* [tldr pages](https://tldr.sh/)
