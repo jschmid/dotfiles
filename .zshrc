@@ -106,8 +106,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 export ANDROID_HOME=/Users/jonas/Library/Android/sdk
 
-# Ruby from Brew
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+# rbenv
+eval "$(rbenv init - zsh)"
 
 # GPG
 export GPG_TTY=$(tty)

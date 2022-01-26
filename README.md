@@ -6,6 +6,7 @@ My personal dot files
 
 * [Homebrew](https://brew.sh/)
   * [gnupg](https://formulae.brew.sh/formula/gnupg)
+  * [rbenv](https://formulae.brew.sh/formula/rbenv)
 * [iTerm2](https://iterm2.com/)
 * [Xcodes](https://github.com/RobotsAndPencils/xcodes)
 * [Oh My Zsh](https://ohmyz.sh/)
