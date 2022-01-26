@@ -21,7 +21,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = code --wait
 [gpg]
-	program = /usr/local/bin/gpg
+	program = gpg
 
 [filter "lfs"]
 	required = true

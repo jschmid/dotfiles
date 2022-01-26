@@ -108,3 +108,6 @@ export ANDROID_HOME=/Users/jonas/Library/Android/sdk
 
 # Ruby from Brew
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# GPG
+export GPG_TTY=$(tty)
