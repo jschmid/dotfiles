@@ -12,6 +12,7 @@
 	ri = "rebase -i"
 	ra = "rebase --abort"
 	rc = "rebase --continue"
+	pfl = "push --force-with-lease"
 [push]
 	default = simple
 	autoSetupRemote = true
@@ -21,6 +22,7 @@
 	excludesfile = /Users/jonas/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = code --wait
+	autocrlf = input
 [gpg]
 	program = gpg
 
@@ -34,6 +36,8 @@
 
 [pull]
 	ff = only
+[github]
+    user = jschmid
 
 [includeIf "gitdir:~/dev/fairtiq/"]
   path = .gitconfig-fairtiq
