@@ -111,3 +111,6 @@ eval "$(rbenv init - zsh)"
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Docker on Apple Silicon
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
